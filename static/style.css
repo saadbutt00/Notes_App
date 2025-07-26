@@ -1,0 +1,139 @@
+body {
+    background-color: #0E1117;
+    color: #FAFAFA;
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #06070B;
+    color: #FAFAFA;
+    font-size: 60px;
+    margin: 40px 0 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: #262730;
+    color: #FAFAFA;
+    font-size: 16px;
+    padding: 10px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #37383f;
+}
+
+.top-bar .welcome,
+.welcome {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.messages {
+    margin: 30px 0;
+    text-align: left;
+}
+
+.messages ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.description {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.auth-section {
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.note-form {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.note-form textarea {
+    width: 60%;
+    height: 120px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    resize: vertical;
+    background-color: #1E1E1E;
+    color: #FAFAFA;
+}
+
+.note-form input[type="submit"] {
+    margin-top: 10px;
+}
+
+.note-list {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.note-list ol {
+    padding-left: 20px;
+}
+
+.note-list li {
+    margin-bottom: 15px;
+}
+
+.done-form {
+    display: inline;
+}
+
+.done-btn {
+    background-color: #262730;
+    color: #FAFAFA;
+    font-size: 14px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.done-btn:hover {
+    background-color: #37383f;
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.logout-btn {
+    background-color: #262730;
+    color: #FAFAFA;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #37383f;
+}

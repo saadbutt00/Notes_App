@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App - Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>📒 Notes App (Flask)</h1> 
+
+<div class="description">
+    <p>Welcome to the Notes App. Create, view, and manage personal notes with ease.</p>
+</div>
+<br>
+<br>
+<div class="auth-section">
+    <p>If you already have an account:</p>
+    <a href="{{ url_for('login_page') }}">
+        <button>Login</button>
+    </a>
+
+    <p>If you are new, please create an account:</p>
+    <a href="{{ url_for('create_account') }}">
+        <button>Create Account</button>
+    </a>
+</div>
+</body>
+</html>

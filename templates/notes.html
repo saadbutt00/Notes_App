@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App - Your Notes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="header">
+        <p class="welcome">Welcome, {{ user }}</p>
+    </div>
+
+    <div class="messages">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <p><strong>Messages:</strong></p>
+            <ul>
+              {% for msg in messages %}
+                <li>{{ msg }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
+
+    <form method="post" class="note-form">
+        <textarea name="notes" placeholder="Write your Note here..." required></textarea><br>
+        <input type="submit" value="Save">
+    </form>
+
+    <div class="note-list">
+        <ol>
+          {% for note in notes %}
+            <li>
+              {{ note[0] }}
+              <form method="post" action="{{ url_for('delete_note') }}">
+                <input type="hidden" name="note_content" value="{{ note[0] }}">
+                <button class="done-btn" type="submit">Done</button>
+              </form>
+            </li>
+          {% endfor %}
+        </ol>
+    </div>
+
+    <footer>
+        <a href="{{ url_for('logout') }}">
+            <button class="logout-btn">Logout</button>
+        </a>
+    </footer>
+
+</body>
+</html>
