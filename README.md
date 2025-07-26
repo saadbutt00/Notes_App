@@ -25,7 +25,7 @@ A simple and functional Notes Web Application built with **Flask**. This app all
 ## 📁 Setup Instructions
 
 1. Clone this repository:
-   [git clone https://github.com/yourusername/Notes_App-Flask-.git]
+   [git clone https://github.com/saadbutt00/Notes_App-Flask-.git]
    
 2. Navigate to the project directory:
    [bash]
